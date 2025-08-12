@@ -1,0 +1,23 @@
+:root[data-theme='dark']{
+
+  --primary-color-dark: #38b6ff;
+  --primary-bg-color-dark: black;
+  --primary-border-color-dark: #38b6ff;
+
+  --title-color-dark: ;
+  --text-color-dark: black;
+  --link-color-dark: ;
+  --icon-color-dark: ;
+}
+
+:root[data-theme='light']{
+
+  --primary-color-light: #38b6ff;
+	--primary-bg-color-light: white;
+	--primary-border-color-light: #38b6ff;
+
+  --title-color-light: ;
+  --text-color-light: white;
+  --link-color-light: ;
+  --icon-color-light: ;
+}
