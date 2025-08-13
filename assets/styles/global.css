@@ -9,35 +9,10 @@ body{
 }
 
 .first .nav-style{
-    position: relative;
-}
-
-.first .theme{
-    position: absolute;
-    left: 2.5%;
-    top: 15%;
-
-    background-color: var(--primary-bg-color-dark);
-    border: 2px solid var(--primary-color-dark);
-    border-radius: 7px;
-    padding: 0.5rem;
-}
-
-.first .theme:hover{
-    background-color: var(--primary-color-dark);
-    box-shadow: 0 0 25px var(--primary-color-dark);
-    transition: 1s ease;
-}
-
-.first .theme a{
-    text-decoration: none;
-    cursor: pointer;
-    color: var(--primary-color-dark);
-}
-
-.first .theme a:hover{
-    color: var(--text-color-dark);
-    transition: 0.5s ease;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .first .style-nav-ul{
@@ -48,6 +23,7 @@ body{
 
     border-bottom: 2px solid var(--primary-border-color-dark);
     height: 80px;
+    background-color: var(--primary-bg-color-dark);
 }
 
 .first .style-nav-ul li{
@@ -68,15 +44,15 @@ body{
 .first .style-nav-ul li:hover{
     background-color: var(--primary-color-dark);
     color: var(--text-color-dark);
+    cursor: pointer;
     transition: 1s ease;
 }
 
 .first .style-nav-ul li a:hover{
     color: var(--text-color-dark);
+    cursor: pointer;
     transition: 1s ease;
 }
-
-/* --- Resolver pequeno problema no hover --- */
 
 /* -------------------------------------------------------------------------------- */
 
@@ -86,6 +62,11 @@ body{
     align-items: center;
 
     margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+#inicio{
+    scroll-margin-top: 150px;
 }
 
 .second .text_inicial .animation-p{
@@ -134,15 +115,19 @@ body{
     }
 }
 
+.second .img-photo img{
+    border-radius: 10px;
+}
+
 .img-photo{
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(40px);
     animation: aparecerImagem 2s ease-out forwards;
 }
 
 @keyframes aparecerImagem{
     to{
-        opacity: 1;
+        opacity: 0.8;
         transform: translateY(0);
     }
 }
@@ -150,9 +135,7 @@ body{
 /* -------------------------------------------------------------------------------- */
 
 .third{
-    margin-top: 50px;
     border-bottom: 2px solid var(--primary-color-dark);
-    padding-bottom: 40px;
 }
 
 .third .icons-redes ul{
@@ -187,11 +170,13 @@ body{
 .third .icons-redes ul li:hover{
     background-color: var(--primary-color-dark);
     color: var(--text-color-dark);
+    cursor: pointer;
     transition: 1s ease;
 }
 
 .third .icons-redes ul li a:hover{
     color: var(--text-color-dark);
+    cursor: pointer;
     transition: 1s ease;
 }
 
@@ -207,7 +192,6 @@ body{
     align-items: center;
 
     color: var(--primary-color-dark);
-    margin-top: 40px;
 }
 
 .third .icons-ferramentas ul{
@@ -217,6 +201,7 @@ body{
     align-items: center;
 
     gap: 50px;
+    margin-bottom: 50px;
 }
 
 .third .icons-ferramentas ul li{
@@ -325,12 +310,9 @@ body{
 
 .about-me{
     margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border: 2px solid var(--primary-color-dark);
-    border-radius: 10px;
     font-family: Roboto;
     color: var(--primary-color-dark);
+    border-bottom: 2px solid var(--primary-color-dark);
 
     display: flex;
     flex-direction: row;
@@ -338,10 +320,13 @@ body{
     align-items: center;
 }
 
+#sobre-mim{
+    scroll-margin-top: 50px;
+}
+
 /* left-container */
 
 .about-me .left-container .info-about-me{
-    margin-top: 50px;
     border: 2px solid var(--primary-color-dark);
     padding: 40px;
     border-radius: 10px;
@@ -350,6 +335,15 @@ body{
     width: 800px;
     height: 400px;
     box-shadow: 0 0 25px var(--primary-color-dark);
+}
+
+.about-me .left-container .info-curriculo-certificado ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+    width: 100%;
 }
 
 .about-me .left-container .info-curriculo-certificado ul{
@@ -411,5 +405,15 @@ body{
     margin-top: 50px;
     margin-bottom: 50px;
     width: 800px;
-    height: 600px;
+    height: 1030px;
 }
+
+.right-container .linha-horizontal{
+    width: 700px;
+    border: 1px solid var(--primary-color-dark);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* -------------------------------------------------------------------------------- */
+

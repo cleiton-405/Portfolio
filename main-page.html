@@ -24,12 +24,11 @@
 
     <section class="first">
         <div class="nav-style">
-            <div class="theme"><a href="">Light</a></div>
-
+            <!-- Criar um botão para modo claro e escuro -->
             <nav>
                 <ul class="style-nav-ul">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
+                    <li><a href="#inicio">Home</a></li>
+                    <li><a href="#sobre-mim">About</a></li>
                     <li><a href="">Projects</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
@@ -37,7 +36,7 @@
         </div>
     </section>
 
-    <section class="second">
+    <section class="second" id="inicio">
         <div class="text_inicial">
             <p class="animation-p">
                 Hello, I'm Cleiton Pinheiro Pereira Front-End Developer
@@ -105,19 +104,25 @@
             </div>
     </section>
 
-    <section class="about-me">
+    <section class="about-me" id="sobre-mim">
         <div class="left-container">
             <div class="info-about-me">
-                <p>Tenho o objetivo de entrar na área de desenvolvimento, sendo o foco principal Front-end. Apesar de ter pouca experiência de trabalho, consigo adquirir conhecimento de forma ágil e realizar tarefas concedidas. Quando descobri sobre desenvolvimento web, fiquei surpreso com diversidade de coisas que podemos criar, desde sites web até estruturas para empresas. Algumas qualidades que possuo são: Criatividade, trabalho em equipe e organização que são pontos fundamentais dentro da área de tecnologia.</p>
+                <p>Tenho o objetivo de entrar na área de desenvolvimento, sendo o foco principal Front-end. Apesar de ter pouca experiência de trabalho, consigo adquirir conhecimento de forma ágil e realizar as tarefas concedidas. Quando descobri sobre desenvolvimento web, fiquei surpreso com a diversidade de coisas que podemos criar, desde sites web até estruturas para empresas. Algumas qualidades que possuo são: criatividade, trabalho em equipe e organização, os quais são pontos fundamentais dentro da área de tecnologia.</p>
             </div>
 
             <div class="info-curriculo-certificado">
                 <ul>
                     <li>
-                        <a href="#">Currículo</a>
+                        <a href="Currículo.pdf" target="_blank">
+                            <img id="iconeCurriculo" src="assets/images/icons-ferramentas/icone-azul-curriculo.png" alt="icone azul" width="25px" height="25px">
+                            Currículo
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Certificados</a>
+                        <a href="#" target="_blank">
+                            <img id="iconeCertificado" src="assets/images/icons-ferramentas/icone-azul-certificado.png" alt="icone azul" width="25px" height="25px">
+                            Certificados
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -134,20 +139,87 @@
         
         <div class="right-container">
             <div class="info-habilidades">
-                <p>Habilidades</p>
+                <p><i class="bi bi-circle-fill"> Habilidades</i></p>
+                    <ul>
+                        <li><i class="bi bi-caret-right"> Organização</i></li>
+                        <li><i class="bi bi-caret-right"> Proatividade</i></li>
+                        <li><i class="bi bi-caret-right"> Trabalho em equipe</i></li>
+                        <li><i class="bi bi-caret-right"> Criatividade</i></li>
+                        <li><i class="bi bi-caret-right"> Adaptabilidade</i></li>
+                    </ul>
             </div>
+
+            <div class="linha-horizontal"></div>
+
             <div class="info-experiencias">
-                <p>Experiências</p>
+                <p><i class="bi bi-circle-fill"> Experiências</i></p>
+                    <p>
+                        Auxiliar de Escritório em Geral <br>
+                        Julho 2021- Maio 2022 - Tempo Integral <br>
+                        Construtora Sultepa SA <br>
+                        Organização de documentos, arquivos, formatação de planilhas Excel, controle de estoque do material e realização de relatórios.
+                    </p>
             </div>
+
+            <div class="linha-horizontal"></div>
+
             <div class="info-cursos">
-                <p>Cursos</p>
+                <p><i class="bi bi-circle-fill"> Cursos</i></p>
+                    <ul>
+                        <li>
+                            <p>
+                                <i class="bi bi-arrow-right-short">Cursando Análise e Desenvolvimento de Sistemas <br>
+                                2018-2022(Trancado) - FADERGS
+                                </i>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="bi bi-arrow-right-short">Udemy (Webdesign Front-end Fundamentos: HTML, CSS, Lógica de programação e Javascript) <br>
+                                    Cursando em 2025
+                                </i>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="bi bi-arrow-right-short">Curso em vídeo (Curso HTML5 e CSS3) <br>
+                                Cursando em 2025
+                                </i>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="bi bi-arrow-right-short">Curso Santander - bootcamp Ri Happy - Front-end do Zero
+                                </i>
+                            </p>
+                        </li>
+                    </ul>
             </div>
         </div>
+
+        <div class="first-project">
+            <div class="project-1"></div>
+            <div class="description-1"></div>
+            <div class="tecnologia-1"></div>
+        </div>
+        
+        <div class="second-project">
+            <div class="project-2"></div>
+            <div class="description-2"></div>
+            <div class="tecnologia-2"></div>
+        </div>
+
+        <div class="third">
+            <div class="project-3"></div>
+            <div class="description-3"></div>
+            <div class="tecnologia-3"></div>
+        </div>
+
     </section>
     
+    <script src="assets/scripts.js/script.js"></script>
     <script 
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
     </script>
-    <script src="assets/scripts.js/"></script>
 </body>
 </html>
