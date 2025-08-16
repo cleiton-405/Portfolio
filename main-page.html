@@ -23,14 +23,14 @@
 <body>
 
     <section class="first">
-        <div class="nav-style">
+        <div class="nav-style text">
             <!-- Criar um botão para modo claro e escuro -->
             <nav>
                 <ul class="style-nav-ul">
-                    <li><a href="#inicio">Home</a></li>
+                    <li><a href="#inicio" class="link-default">Home</a></li>
                     <li><a href="#sobre-mim">About</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -48,7 +48,7 @@
     </section>
 
     <section class="third">
-        <div class="icons-redes">
+        <div class="icons-redes text">
                 <ul>
                     <li>
                         <a href="https://github.com/cleiton-405" target="_blank">
@@ -67,59 +67,59 @@
                     </li>
                 </ul>
             </div>
-            <div class="icons-ferramentas">
+            <div class="icons-ferramentas text">
                 <p>Conhecimentos em: </p>
                 <ul>
-                    <li class="icon-js-li">
+                    <li class="icon-circle" id="js">
                         <img src="assets/images/icons-ferramentas/js.png" alt="javascript" width="30px" height="30px">
                     </li>
-                    <li class="icon-html-li">
+                    <li class="icon-circle" id="html">
                         <img src="assets/images/icons-ferramentas/html.png" alt="html" width="30px" height="30px">
                     </li>
-                    <li class="icon-css-li">
+                    <li class="icon-circle" id="css">
                         <img src="assets/images/icons-ferramentas/css-3.png" alt="css" width="30px" height="30px">
                     </li>
-                    <li class="icon-nodejs-li">
+                    <li class="icon-circle" id="nodejs">
                         <img src="assets/images/icons-ferramentas/node.js.png" alt="powerpoint" width="35px" height="35px">
                     </li>
-                    <li class="icon-vscode-li">
+                    <li class="icon-circle" id="vscode">
                         <img src="assets/images/icons-ferramentas/visual studio.png" alt="vscode" width="35px" height="35px">
                     </li>
-                    <li class="icon-canva-li">
+                    <li class="icon-circle" id="canva">
                         <img src="assets/images/icons-ferramentas/canva.png" alt="canva" width="40px" height="40px">
                     </li>
-                    <li class="icon-figma-li">
+                    <li class="icon-circle" id="figma">
                         <img src="assets/images/icons-ferramentas/figma.png" alt="figma" width="40px" height="40px">
                     </li>
-                    <li class="icon-excel-li">
+                    <li class="icon-circle" id="excel">
                         <img src="assets/images/icons-ferramentas/excel.png" alt="excel" width="35px" height="35px">
                     </li>
-                    <li class="icon-word-li">
+                    <li class="icon-circle" id="word">
                         <img src="assets/images/icons-ferramentas/word.png" alt="word" width="35px" height="35px">
                     </li>
-                    <li class="icon-pp-li">
+                    <li class="icon-circle" id="pwp">
                         <img src="assets/images/icons-ferramentas/powerpoint.png" alt="powerpoint" width="35px" height="35px">
                     </li>
                 </ul>
             </div>
     </section>
 
-    <section class="about-me" id="sobre-mim">
+    <section class="about-me mt-mb-50" id="sobre-mim">
         <div class="left-container">
             <div class="info-about-me">
                 <p>Tenho o objetivo de entrar na área de desenvolvimento, sendo o foco principal Front-end. Apesar de ter pouca experiência de trabalho, consigo adquirir conhecimento de forma ágil e realizar as tarefas concedidas. Quando descobri sobre desenvolvimento web, fiquei surpreso com a diversidade de coisas que podemos criar, desde sites web até estruturas para empresas. Algumas qualidades que possuo são: criatividade, trabalho em equipe e organização, os quais são pontos fundamentais dentro da área de tecnologia.</p>
             </div>
 
-            <div class="info-curriculo-certificado">
+            <div class="info-curriculo-certificado text">
                 <ul>
                     <li>
-                        <a href="Currículo.pdf" target="_blank">
+                        <a href="Currículo.pdf" target="_blank" id="a-icone-curriculo">
                             <img id="iconeCurriculo" src="assets/images/icons-ferramentas/icone-azul-curriculo.png" alt="icone azul" width="25px" height="25px">
                             Currículo
                         </a>
                     </li>
                     <li>
-                        <a href="#" target="_blank">
+                        <a href="#" target="_blank" id="a-icone-certificado">
                             <img id="iconeCertificado" src="assets/images/icons-ferramentas/icone-azul-certificado.png" alt="icone azul" width="25px" height="25px">
                             Certificados
                         </a>
@@ -127,7 +127,7 @@
                 </ul>
             </div>
 
-            <div class="info-idiomas">
+            <div class="info-idiomas mt-mb-50 text">
                 <ul>
                     <li>Idiomas:</li>
                     <li>Português</li>
@@ -196,27 +196,66 @@
                     </ul>
             </div>
         </div>
+    </section>
 
-        <div class="first-project">
-            <div class="project-1"></div>
-            <div class="description-1"></div>
-            <div class="tecnologia-1"></div>
+    <section class="projects" id="projects">
+        <div class="project-cards">
+            <div class="project">Imagem de background</div>
+            <div class="description">Breve descrição sobre o projeto</div>
+            <div class="tecnologia">Tecnologias usadas</div>
         </div>
         
-        <div class="second-project">
-            <div class="project-2"></div>
-            <div class="description-2"></div>
-            <div class="tecnologia-2"></div>
+        <div class="project-cards">
+            <div class="project">Imagem de background</div>
+            <div class="description">Breve descrição sobre o projeto</div>
+            <div class="tecnologia">Tecnologias usadas</div>
         </div>
 
-        <div class="third">
-            <div class="project-3"></div>
-            <div class="description-3"></div>
-            <div class="tecnologia-3"></div>
+        <div class="project-cards">
+            <div class="project">Imagem de background</div>
+            <div class="description">Breve descrição sobre o projeto</div>
+            <div class="tecnologia">Tecnologias usadas</div>
         </div>
-
     </section>
+
+    <div class="link-github">
+        <p>Para mais projetos acesse o meu <a href="https://github.com/cleiton-405" target="_blank">github</a></p>
+    </div>
     
+    <section class="contact" id="contact">
+        <div class="contatos">
+            <h1>Contate-me</h1>
+            <p>
+                Estou aberto para oportunidades de trabalho ou networking. Contate-me via e-mail ou através das minhas redes sociais.
+            </p>
+        </div>
+        <div class="social-media">
+            <ul>
+                <li>
+                    <a href="https://github.com/cleiton-405" target="_blank">
+                        <i class="bi bi-github"></i>
+                        Github
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/cleiton_405/?hl=pt" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/cleiton-pereira" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                        Linkedln
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="banner-email text">
+            <p>cleiton4055@hotmail.com</p>
+        </div>
+    </section>
+
     <script src="assets/scripts.js/script.js"></script>
     <script 
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">

@@ -1,23 +1,26 @@
 const hoverCurriculo = () =>{
+    const aCurriculo = document.getElementById("a-icone-curriculo")
     const iconeCurriculo = document.getElementById("iconeCurriculo")
 
-    iconeCurriculo.addEventListener("mouseover", () =>{
+    aCurriculo.addEventListener("mouseover", () =>{
         iconeCurriculo.src = "assets/images/icons-ferramentas/icone-preto-curriculo.png"
     })
-
-    iconeCurriculo.addEventListener("mouseout", () =>{ 
+    
+    aCurriculo.addEventListener("mouseout", () =>{ 
         iconeCurriculo.src = "assets/images/icons-ferramentas/icone-azul-curriculo.png" 
     })
+
 }
 
 const hoverCertificado = () =>{
+    const aCertificado = document.getElementById("a-icone-certificado")
     const iconeCertificado = document.getElementById("iconeCertificado")
 
-    iconeCertificado.addEventListener("mouseover", () =>{
+    aCertificado.addEventListener("mouseover", () =>{
         iconeCertificado.src = "assets/images/icons-ferramentas/icone-preto-certificado.png"
     })
 
-    iconeCertificado.addEventListener("mouseout", () =>{ 
+    aCertificado.addEventListener("mouseout", () =>{ 
         iconeCertificado.src = "assets/images/icons-ferramentas/icone-azul-certificado.png" 
     })
 }
